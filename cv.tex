@@ -1,0 +1,238 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\name{Victor Aladele} % Your name
+%\address{1071A Terrell St. NW \\ Atlanta, GA 30318} % Your address
+
+\address{(301)-379-5241} % Your phone number and email
+\address{valad@gatech.edu}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Georgia Institute of Technology} \hfill {\bf \em Atlanta GA} \\ 
+PhD in Electrical Engineering \hfill {\em Aug 2016 - Present}\\
+Anticipated Graduation \hfill {\em Aug 2022}\\
+Research focus \hfill {\em Robotics and Machine Learning}\\
+\\
+{\bf New Jersey Institute of Technology} \hfill {\bf \em Newark NJ} \\ 
+B.S. in Electrical Engineering \hfill {\em May 2016}\\
+Minor in Applied Mathematics \\
+Overall GPA: 3.76 (Magna Cum Laude)
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Publication SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Publications}
+\begin{itemize}
+\item \textbf{V. Aladele} and S. Hutchinson, \textbf{Impedance-Based Collision Reaction Strategy via Internal Stress Loading in Cooperative Manipulation}, IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2021.
+
+\item \textbf{V. Aladele} and S. Hutchinson, \textbf{Collision reaction through internal stress loading in cooperative manipulation}, IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2020.
+
+\item Zafar, M., Mehmood, A., Khan, M., Zhang, S., Murtaza, M., \textbf{Aladele, V.}, Theodorou, E.A., Hutchinson, S. and Boots, B., 2018, November. \textbf{Semi-parametric Approaches to Learning in Model-Based Hierarchical Control of Complex Systems}. In International Symposium on Experimental Robotics (pp. 387-397). Springer, Cham.
+\end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Internship Experience SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Work Experience}
+\begin{rSubsection}{Georgia Institute of Technology}{\bf \em Atlanta GA}{Graduate Research Assistant}{\em Aug 2016 - Present}
+\item PhD Advisor: {\em Seth Hutchinson, PhD}
+\item Dissertation Title: {\em Cooperative manipulation strategies for multi-robot and human-robot collaboration}
+\end{rSubsection}
+
+\begin{rSubsection}{Royal Institute of Technology (KTH)}{\bf \em Stockholm, Sweden}{Visiting PhD Student}{\em Aug 2021 - Jan 2022}
+\item Host Advisor: {\em Danica Kragic Jensfelt, PhD}
+\item Research focus: Compensating for model errors in cooperative manipulation: A Decentralized Approach.
+\item Worked in Pybullet, using "Stable-Baselines" to train reinforcement learning agents to learn to compensate for model errors.
+\end{rSubsection}
+
+\begin{rSubsection}{Google (Brain/Research)}{\bf \em Remote / Mountain View CA}{Research Intern}{\em May 2021 - August 2021}
+\item Worked on developing reinforcement learning solutions for high-speed robotics.
+\item Developed and implemented curriculum learning algorithms to improve robot learning.
+\item Implemented and trained different policy action spaces to improve performance of our robot.
+\item Writing unittests.
+\end{rSubsection}
+
+\begin{rSubsection}{Blue River Technology (A John Deere Subsidiary)}{\bf \em Remote / Sunnyvale CA}{Software Engineering Intern}{\em May 2020 - Aug 2020}
+\item Worked on a team to develop software for cutting-edge {\em John Deere} machinery
+\item Worked in an agile-based development environment (Jira)
+\item Unittesting with google testing framework
+\item Worked with data serializing and deserializing frameworks such as: {\em Flatbuffers, Protocol buffers}
+\item GPU programming, {\em CUDA}
+\item Worked heavily with C++, including modern C++. 
+\item Used Git with integrated testing (Jenkins) for version control
+\end{rSubsection}
+
+\begin{rSubsection}{Bosch (Advanced Corporate Research), BSH Home Appliances}{\bf \em Sunnyvale CA}{Robotics Software Intern}{\em May 2019 - Aug 2019}
+\item Worked on implementing impedance control on a 6 DOF robotic arm for object insertion tasks.
+\item Worked with different C++ libraries such as, Rigidbody Dynamics Library (RBDL). 
+\item Wrote action-client ROS nodes for switching controllers. For example,  switching from a trajectory controller to an impedance controller.
+\item Worked with C++, version control (Git), Python and ROS. 
+\item Worked with both simulation and hardware.
+\end{rSubsection}
+
+\begin{rSubsection}{Massachusetts Institute of Technology}{\bf \em Cambridge MA}{Research Intern}{\em June 2015 - Aug 2015}
+\item {\bf Advisors}: Daniela Rus {\em PhD},   Robert McCurdy, {\em PhD} \hfill {\bf CSAIL}
+\item Designed and 3D printed gear pumps for hydraulically actuated robots.
+\item Worked with Autodesk Inventor to design CAD models that were converted to STL files for
+printing.
+\end{rSubsection}
+
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Computer Languages & C++, Python\\
+Scripting Languages & HTML, XML, MATLAB \\
+Tools & Robot Operating System (ROS), Pytorch, Git, Autodesk Inventor, \\ & Pybullet, OpenAI gym, Gazebo, Blender, Jupyter-notebook, CUDA
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RELEVANT COURSE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Relevant Courses}
+Computer Vision  \hspace{20 pt} Machine Learning \hspace{26 pt} Stochastic Systems \hspace{10 pt}  Robot Intelligence and Planning
+\\
+Linear Systems \hspace{30 pt} Nonlinear Systems \hspace{20 pt} Optimal Control \hspace{22 pt} Interactive Robot Learning
+\\
+Advanced Programming Techniques ({\scriptsize CUDA, OpenMP, OpenGL, Sockets}) \hspace{10 pt} Mobile Manipulation
+
+
+\end{rSection}
+
+%------------------------------------------------
+
+\begin{rSection}{Research Projects}
+
+\begin{rSubsection}{Cooperative Mobile Manipulation}{\em August 2019 - Present}{Working both in simulation and on hardware}{}
+\item Developing deep reinforcement learning schemes for multi-robot systems to cooperatively transport objects.
+\item Implementing operational space control on KUKA IIWA7 arms that are mounted on mobile bases.
+\item Implementing a vehicle-arm coordination scheme to enable the mobile base move in proper symphony with the arm.
+\item Working with Rigidbody Dynamics Library (RBDL) and DRAKE in C++, version control (Git), Python and ROS.
+\item Working with the following simulators: Gazebo, Drake and Pybullet (interfaced with OpenAI gym).
+\end{rSubsection}
+
+%------------------------------------------------
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Class Projects}
+%------------------------------------------------------------
+\begin{rSubsection}{Robot Intelligence and Planning}{\em Fall 2020}{}{}
+\item Implemented a version of DeepMind's AlphaZero chess AI. Used Deep Reinforcement Learning in conjunction with Monte-Carlo Tree Search to train a deep neural network to play the game of chess. Tools used include: Python, Pytorch, cuda.
+
+\item Implemented deep reinforcement learning algorithms like: DQN, REINFORCE and A2C.
+
+\item Implemented Rapidly-exploring Random Trees (RRT) to find a path between start and goal point on a 2D map. Algorithm implementation included steering dynamics with nonlinear optimization and obstacle detection. Code was written in Python.
+
+\end{rSubsection}
+%-----------------------------------------------------------
+\begin{rSubsection}{Computer Vision}{\em Fall 2020}{}{}
+\item Image classification using deep learning frameworks such as: CNNs, transfer learning with Alexnet and pytorch.
+\item Feature Matching, using feature detectors (Harris detector) and feature descriptors (SIFT) in pytorch.
+\end{rSubsection}
+%-----------------------------------------------------------
+\begin{rSubsection}{Advanced Programming Techniques}{\em Fall 2019}{}{}
+\item Used OpenGL to design a bitmapped football field with multiple drones controlled by different MPI processes. The goal was to create a simulation of multiple drones display over a football field. 
+\item Developed a distributed MPI program to guide simulated spaceships safely back to dock with the mothership (also simulated). Each spaceship was controlled by a different process, while the mothership was controlled by the master process. 
+\item Designed a UDP server-client program.
+\item Optimized code for solving 'Largest Product in a Grid' by creating an OpenMP multithreaded program.
+\end{rSubsection}
+
+%------------------------------------------------
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Teaching Positions}
+
+\begin{rSubsection}{Graduate Teaching Assistant}{\em August 2016 - May 2018}{\em Georgia Tech}{Atlanta GA}
+\item Signals and Systems, Junior year course (3 semesters)
+\item Senior Design Project, Senior year course (2 semesters)
+\end{rSubsection}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	HONORS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Honors, Awards and Societies}
+
+\begin{rSubsection}{}{}{}{}
+\item Tau Beta Pi Honors Society, Member \hfill {\em Aug 2014 - Present}
+\item Institute of Electrical and Electronic Engineering, Member \hfill {\em Aug 2013 - Present}
+\end{rSubsection}
+
+\end{rSection}
+
+\begin{rSection}{Extracurricular Activities}
+
+\begin{rSubsection}{Volunteer High-school Curriculum Contributor}{\em March 2021}{}{}
+\item Worked with Atlanta Public School teachers to develop a project-based learning (PBL) component of the Algebra II curriculum.
+\end{rSubsection}
+
+\begin{rSubsection}{Volunteer Application reviewer}{\em 2018 - present}{}{}
+\item Annually review applications for the undergraduate summer research program at MIT.
+\end{rSubsection}
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
