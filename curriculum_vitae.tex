@@ -22,13 +22,16 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
+%\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[colorlinks=true, citecolor=red, urlcolor=blue]{hyperref}
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 
 \name{Victor Aladele} % Your name
 %\address{1071A Terrell St. NW \\ Atlanta, GA 30318} % Your address
 
-\address{(301)-379-5241} % Your phone number and email
-\address{valad@gatech.edu}
+\address{valad@gatech.edu, +1(301)-379-5241, website: \href{https://victoralad.github.io}{victoralad.github.io}} % Your phone number and email
+%\address{valad@gatech.edu}
 
 \begin{document}
 
@@ -55,6 +58,8 @@ Overall GPA: 3.76 (Magna Cum Laude)
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Publications}
 \begin{itemize}
+\item \textbf{V. Aladele}, A. Longhini, A. Riechlin, H.Yin, C. Pek, D. Kragic, \textbf{Compensating for Errors in Cooperative Manipulation: A Decentralized Approach via Residual Reinforcement Learning}, IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS),\\ \textcolor{violet}{2022 under review}.
+
 \item \textbf{V. Aladele} and S. Hutchinson, \textbf{Impedance-Based Collision Reaction Strategy via Internal Stress Loading in Cooperative Manipulation}, IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2021.
 
 \item \textbf{V. Aladele} and S. Hutchinson, \textbf{Collision reaction through internal stress loading in cooperative manipulation}, IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2020.
@@ -63,6 +68,18 @@ Overall GPA: 3.76 (Magna Cum Laude)
 \end{itemize}
 \end{rSection}
 
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages & C++, Python\\
+Tools & Robot Operating System (ROS), Pytorch, Pybullet, Tensorflow \\ & OpenAI gym, MATLAB, Gazebo, Blender, CUDA, Autodesk Inventor
+\end{tabular}
+
+\end{rSection}
 %----------------------------------------------------------------------------------------
 %	Internship Experience SECTION
 %----------------------------------------------------------------------------------------
@@ -74,58 +91,71 @@ Overall GPA: 3.76 (Magna Cum Laude)
 
 \begin{rSubsection}{Royal Institute of Technology (KTH)}{\bf \em Stockholm, Sweden}{Visiting PhD Student}{\em Aug 2021 - Jan 2022}
 \item Host Advisor: {\em Danica Kragic Jensfelt, PhD}
-\item Research focus: Compensating for model errors in cooperative manipulation: A Decentralized Approach.
-\item Worked in Pybullet, using "Stable-Baselines" to train reinforcement learning agents to learn to compensate for model errors.
+\item Designed a novel application of residual reinforcement learning to cooperative manipulation. Tools used include: Pybullet, Stable-baselines, OpenAI gym
 \end{rSubsection}
 
 \begin{rSubsection}{Google (Brain/Research)}{\bf \em Remote / Mountain View CA}{Research Intern}{\em May 2021 - August 2021}
 \item Worked on developing reinforcement learning solutions for high-speed robotics.
 \item Developed and implemented curriculum learning algorithms to improve robot learning.
-\item Implemented and trained different policy action spaces to improve performance of our robot.
-\item Writing unittests.
 \end{rSubsection}
 
 \begin{rSubsection}{Blue River Technology (A John Deere Subsidiary)}{\bf \em Remote / Sunnyvale CA}{Software Engineering Intern}{\em May 2020 - Aug 2020}
 \item Worked on a team to develop software for cutting-edge {\em John Deere} machinery
-\item Worked in an agile-based development environment (Jira)
-\item Unittesting with google testing framework
-\item Worked with data serializing and deserializing frameworks such as: {\em Flatbuffers, Protocol buffers}
-\item GPU programming, {\em CUDA}
-\item Worked heavily with C++, including modern C++. 
-\item Used Git with integrated testing (Jenkins) for version control
+\item Tools and frameworks used include: C++17, CUDA, Flatbuffers, Protocol buffers, Google Test, Jira.
 \end{rSubsection}
 
 \begin{rSubsection}{Bosch (Advanced Corporate Research), BSH Home Appliances}{\bf \em Sunnyvale CA}{Robotics Software Intern}{\em May 2019 - Aug 2019}
 \item Worked on implementing impedance control on a 6 DOF robotic arm for object insertion tasks.
-\item Worked with different C++ libraries such as, Rigidbody Dynamics Library (RBDL). 
-\item Wrote action-client ROS nodes for switching controllers. For example,  switching from a trajectory controller to an impedance controller.
-\item Worked with C++, version control (Git), Python and ROS. 
-\item Worked with both simulation and hardware.
+\item Tools used include: C++, Python, ROS, Rigidbody Dynamics Library (RBDL), Gazebo, Kinova arm.
 \end{rSubsection}
 
 \begin{rSubsection}{Massachusetts Institute of Technology}{\bf \em Cambridge MA}{Research Intern}{\em June 2015 - Aug 2015}
 \item {\bf Advisors}: Daniela Rus {\em PhD},   Robert McCurdy, {\em PhD} \hfill {\bf CSAIL}
 \item Designed and 3D printed gear pumps for hydraulically actuated robots.
-\item Worked with Autodesk Inventor to design CAD models that were converted to STL files for
-printing.
+\item Designed CAD models in Autodesk Inventor.
 \end{rSubsection}
-
-
 
 \end{rSection}
 
+%------------------------------------------------
+
+\begin{rSection}{Research Projects}
+
+\begin{rSubsection}{Cooperative Mobile Manipulation}{\em August 2019 - Present}{Working both in simulation and on hardware}{}
+\item Developing deep reinforcement learning schemes for multi-robot collaboration.
+\item Using TrajOpt for motion planning on a single-arm pick-and-place task
+\item Implementing operational space control on KUKA IIWA7 arms that are mounted on mobile bases.
+\item Working in Gazebo, Drake and Pybullet.
+\end{rSubsection}
+
+%------------------------------------------------
+\end{rSection}
+
 %----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
+%	PROJECTS SECTION
 %----------------------------------------------------------------------------------------
+\begin{rSection}{Class Projects}
+%------------------------------------------------------------
+\begin{rSubsection}{Robot Intelligence and Planning}{\em Fall 2020}{}{}
+\item Implemented a version of DeepMind's AlphaZero chess AI. Used Deep Reinforcement Learning in conjunction with Monte-Carlo Tree Search to train a deep neural network to play the game of chess. Tools used include: Python, Pytorch, cuda.
 
-\begin{rSection}{Technical Strengths}
+\item Implemented deep reinforcement learning algorithms like: DQN, REINFORCE and A2C.
 
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Computer Languages & C++, Python\\
-Scripting Languages & HTML, XML, MATLAB \\
-Tools & Robot Operating System (ROS), Pytorch, Git, Autodesk Inventor, \\ & Pybullet, OpenAI gym, Gazebo, Blender, Jupyter-notebook, CUDA
-\end{tabular}
+\item Implemented Rapidly-exploring Random Trees (RRT) to navigate a 2D map. Algorithm implementation included steering dynamics with nonlinear optimization and obstacle detection.
 
+\end{rSubsection}
+%-----------------------------------------------------------
+\begin{rSubsection}{Computer Vision}{\em Fall 2020}{}{}
+\item Image classification using deep learning framework; transfer learning with CNNs like Alexnet.
+\item Feature Matching, using feature detectors (Harris detector) and feature descriptors (SIFT) in pytorch.
+\end{rSubsection}
+%-----------------------------------------------------------
+\begin{rSubsection}{Advanced Programming Techniques}{\em Fall 2019}{}{}
+\item Used OpenGL to simulate a bitmapped football field with multiple drones controlled by a distributed MPI program. The goal was to create a simulation of multiple drones display over a football field. 
+\item Designed a UDP server-client program.
+\end{rSubsection}
+
+%------------------------------------------------
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -142,49 +172,6 @@ Advanced Programming Techniques ({\scriptsize CUDA, OpenMP, OpenGL, Sockets}) \h
 
 \end{rSection}
 
-%------------------------------------------------
-
-\begin{rSection}{Research Projects}
-
-\begin{rSubsection}{Cooperative Mobile Manipulation}{\em August 2019 - Present}{Working both in simulation and on hardware}{}
-\item Developing deep reinforcement learning schemes for multi-robot systems to cooperatively transport objects.
-\item Implementing operational space control on KUKA IIWA7 arms that are mounted on mobile bases.
-\item Implementing a vehicle-arm coordination scheme to enable the mobile base move in proper symphony with the arm.
-\item Working with Rigidbody Dynamics Library (RBDL) and DRAKE in C++, version control (Git), Python and ROS.
-\item Working with the following simulators: Gazebo, Drake and Pybullet (interfaced with OpenAI gym).
-\end{rSubsection}
-
-%------------------------------------------------
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	PROJECTS SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Class Projects}
-%------------------------------------------------------------
-\begin{rSubsection}{Robot Intelligence and Planning}{\em Fall 2020}{}{}
-\item Implemented a version of DeepMind's AlphaZero chess AI. Used Deep Reinforcement Learning in conjunction with Monte-Carlo Tree Search to train a deep neural network to play the game of chess. Tools used include: Python, Pytorch, cuda.
-
-\item Implemented deep reinforcement learning algorithms like: DQN, REINFORCE and A2C.
-
-\item Implemented Rapidly-exploring Random Trees (RRT) to find a path between start and goal point on a 2D map. Algorithm implementation included steering dynamics with nonlinear optimization and obstacle detection. Code was written in Python.
-
-\end{rSubsection}
-%-----------------------------------------------------------
-\begin{rSubsection}{Computer Vision}{\em Fall 2020}{}{}
-\item Image classification using deep learning frameworks such as: CNNs, transfer learning with Alexnet and pytorch.
-\item Feature Matching, using feature detectors (Harris detector) and feature descriptors (SIFT) in pytorch.
-\end{rSubsection}
-%-----------------------------------------------------------
-\begin{rSubsection}{Advanced Programming Techniques}{\em Fall 2019}{}{}
-\item Used OpenGL to design a bitmapped football field with multiple drones controlled by different MPI processes. The goal was to create a simulation of multiple drones display over a football field. 
-\item Developed a distributed MPI program to guide simulated spaceships safely back to dock with the mothership (also simulated). Each spaceship was controlled by a different process, while the mothership was controlled by the master process. 
-\item Designed a UDP server-client program.
-\item Optimized code for solving 'Largest Product in a Grid' by creating an OpenMP multithreaded program.
-\end{rSubsection}
-
-%------------------------------------------------
-\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
@@ -214,15 +201,26 @@ Advanced Programming Techniques ({\scriptsize CUDA, OpenMP, OpenGL, Sockets}) \h
 
 \begin{rSection}{Extracurricular Activities}
 
+\begin{rSubsection}{Volunteer Application Reviewer}{\em 2018 - present}{}{}
+\item Annually review applications for the undergraduate summer research program at MIT.
+\end{rSubsection}
+
+\begin{rSubsection}{Conference Publication Reviewer}{\em April 2020 - Present}{}{}
+\item Reviewed papers for publication at the following conferences: IROS(2020, 2021), ICRA(2021).
+\end{rSubsection}
+
+\begin{rSubsection}{Conference Session Co-Chair}{\em September 2021}{}{}
+\item Co-chaired the "Multi-Robot Systems I" session at the IROS 2021 conference.
+\item Reviewed papers for publication at the following conferences: IROS(2020, 2021), ICRA(2021).
+\end{rSubsection}
+
 \begin{rSubsection}{Volunteer High-school Curriculum Contributor}{\em March 2021}{}{}
 \item Worked with Atlanta Public School teachers to develop a project-based learning (PBL) component of the Algebra II curriculum.
 \end{rSubsection}
 
-\begin{rSubsection}{Volunteer Application reviewer}{\em 2018 - present}{}{}
-\item Annually review applications for the undergraduate summer research program at MIT.
-\end{rSubsection}
-
 \end{rSection}
+
+
 %----------------------------------------------------------------------------------------
 %	EXAMPLE SECTION
 %----------------------------------------------------------------------------------------
